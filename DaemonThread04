@@ -1,0 +1,22 @@
+class DaemonThread04 extends Thread
+{
+  public void run()
+  {
+    System.out.println(Thread.currentThread().isDaemon());
+
+    public statuc void main(String args[])
+    {
+        DaemonThread04 th1 = new DaemonThread04();
+        DaemonThread04 th2 = new DaemonThread04();
+        DaemonThread04 th3 = new DaemonThread04();
+
+
+        th1.setDaemon();
+        th1.start();
+
+        th2.start();
+        th3.start();
+
+    }
+   }
+}
